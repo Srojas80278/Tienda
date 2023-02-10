@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    /*Acá se agrega la fuente que pusimos en el Import*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navegacion {
+    background-color: #D9A96B;
+    align-items: center;
+    display: flex;
+}
+
+.navegacion nav{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+}
+
+.navegacion ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 130px;
+}
+
+.navegacion li{
+    float: left;
+    padding: 20px 30px 20px 0;
+}
+
+.navegacion li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navegacion img{
+    padding: 10px 10px 10px 0;
+    width: 100px;
+    max-height: 100px;
+
+    display: inline-block;
+    position: relative;
+    left: 15%;
+}
+body{
+    background: linear-gradient(2deg,whitesmoke,white);
+    height: 100vh;
+}
+.Titulo h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Titulo p{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+ section .imagenes {
+    display: flex;
+    width: 490px;
+    height: 430px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ section .imagenes img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    
+    /*Hacemos que la transición se le aplique a todos*/
+    transition-property: all;
+    /*Definimos la duración de la transición*/
+    transition-duration: 1s;
+    /*Hacemos que el desface baya de pesado a ligero (Despacio a rapido)*/
+    transition-timing-function: ease-out;
+    /*La curva de aceleración va a ser constante (o sea, no hay cambios bruzcos)*/
+    transition-delay: linear;
+    
+}
+
+ section .imagenes img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%); 
+}

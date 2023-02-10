@@ -1,0 +1,113 @@
+/*Comentarios: Control+ Shirft+C (Hay que marcarlo)*/
+    .block{
+    background-color: purple;
+    border:10px solid blue;
+    padding: 20px; /*Espacio entre Content y Border*/
+
+    /*TAMAÑO
+    Declaramos el tamaño del contenedor, siendo 200px
+    luego, con el border box, declaramos que sea en total 200 y no 280
+    */
+    width: 200px;
+    height: 200px;
+        box-sizing: border-box; /*Para que mida lo que le indicamos exacto*/
+    
+     }
+    
+    .static{
+        /*Asignamos caja estatica, que no se va a mover con el Top & left*/
+        position: static;
+        border:3px solid green;
+        
+        top:100px;
+        left:100px;
+        
+        /*Le marcamos la distancia que hay entre sus etiquetas compañeras*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /*Le damos forma de cuadrado*/
+        width: 200px;
+        height: 50px;
+        box-sizing: border-box; /*Para que mida lo que le indicamos exacto*/
+    }
+ 
+    .relative{
+        /*Creamos caja relativa (Se puede mover con Top & left)*/
+        position: relative;
+        border:3px solid red;
+        
+        /*Le marcamos la distancia que hay entre sus etiquetas compañeras*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        /*Le damos forma de cuadrado*/
+        width: 200px;
+        height: 50px;
+        box-sizing: border-box; /*Para que mida lo que le indicamos exacto*/
+        
+        /*Movemos la caja dentro de la página*/
+        bottom:60px;
+        left:600px;
+       
+    }   
+    
+    .fixed{
+        
+        /*Creamos caja relativa (Se puede mover con Top & left)*/
+        position: fixed;
+        border:3px solid yellow;
+        
+        /*Le marcamos la distancia que hay entre sus etiquetas compañeras*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        /*Le damos forma de cuadrado*/
+        width: 200px;
+        height: 50px;
+        box-sizing: border-box; /*Para que mida lo que le indicamos exacto*/
+        
+        /*Movemos la caja dentro de la página*/
+        bottom:500px;
+        left:610px;
+       
+    }  
+    
+    .absolute{
+        
+        /*Creamos caja absoluta (Se puede mover con Top & left)*/
+        position: absolute;
+        border:3px solid yellow;
+        
+        /*Le marcamos la distancia que hay entre sus etiquetas compañeras*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        /*Le damos forma de cuadrado*/
+        width: 300px;
+        height: 50px;
+        box-sizing: border-box; /*Para que mida lo que le indicamos exacto*/
+        
+        /*Movemos la caja dentro de la página*/
+        top:200px;
+        left:110px;
+       
+    } 
+    
+    /* Semana 03 - Display */
+    
+    .cuadrado{
+        /*Le damos forma*/
+        width: 200px;
+        height: 200px;
+        
+        /*Le damos color*/
+        background: #aaa;
+        /*Le damos espacio entre etiquetas*/
+        margin-bottom: 20px;
+        
+    }
+    
+    a{
+        padding-right: 20px;
+        
+    }

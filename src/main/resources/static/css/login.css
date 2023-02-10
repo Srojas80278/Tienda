@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    /*Acá se agrega la fuente que pusimos en el Import*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Modificamos el fondo de la página */
+body{
+    
+    /*Con esta regla creamos un fondo con "degradado"
+    Estructura:
+    background: linear-gradient + (Angulo,colorInicial,ColorFinal)   */
+    background: linear-gradient(120deg,#65098C,#E6B8FA);
+    height: 100vh;
+}
+
+
+/*Modificamos el formulario en general, solamente el formulario*/
+.center{
+    /*Modificamos la posición del login "Absoluto" (Se mueve con top & left)*/
+    position: absolute;
+    
+    /*Modificamos el espacio que hay entre cada etiqueta*/
+    top: 50%;
+    left: 50%;
+    
+    /*Nos permite mover, trasladar o rotar nuestras etiquetas*/
+    transform: translate(-50%,-50%);
+
+    width:400px;
+    background: white;
+    
+    /*Podemos redondear las esquinas de los cuadrados, agregar borde!*/
+    border-radius: 10px;
+}
+
+/* Modificamos la etiqueta h1 "login" */
+.center h1{
+    /*Vamos a centrar el h1 conforme a la caja de texto.*/
+    text-align: center;
+    
+    /*Se agregamos un espacio entre el h1 y el borde*/
+    padding: 20px 0;
+    
+    /*Le agregamos un borde abajo de la etiqueta h1
+    que sea 1 px, solido y de color gris */
+    border-bottom: 1px solid black;
+}
+
+/*Modificamos los formularios*/
+.center form{
+    /*le agregamos un espacio entre el formulario y el center*/
+    padding: 0 40px;
+    
+    /*Para que mida lo que le indicamos exactamente*/
+    box-sizing: border-box; 
+    
+}
+
+/*Modificamos los formularios .txt_field*/
+form .txt_field{
+    
+    /*Hacemos que la caja sea relativa para que se pueda mover*/
+    position: relative;
+    
+    /*Le agregamos un borde abajo de la etiqueta h1 que sea 
+    1 px, solido y de color gris */
+    border-bottom: 2px solid silver;
+    
+    /*Le marcamos la distancia que hay entre sus etiquetas compañeras*/
+    margin: 30px 0;
+}
+
+/*Modificamos lo que el usuario ingresa en el formulario*/
+.txt_field input{
+    
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    
+    /*Vamos a cambiar el tamaño de la letra*/
+    font-size: 16px;    
+    
+    /*Vamos a quitar el borde*/
+    border: none;
+    
+    /*Vamos a quitar el color de fondo*/
+    background-color: none; 
+}

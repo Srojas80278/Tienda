@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    /*Acá se agrega la fuente que pusimos en el Import*/
+    margin: 100;
+    padding: 100;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Todo el contenido*/
+.container{
+    /*Definimos alto y ancho*/
+    height: 100vh;
+    width: 100%;
+    
+    /*Agregamos una imagen y su URL*/
+    Background-image: url(../images/Fondo.png);
+    
+    /*Ajustamos el fondo para que se centre en el div:   */
+    Background-position: center;
+    
+    /*Luego, lo reenderizamos por si la imagen es más pequeño o más
+    grande que nuestro div:    */
+    Background-size: cover;
+    
+    padding-left:5%;
+    padding-right:5%;
+
+    /*Para que mida lo que le indicamos exacto*/
+    box-sizing: border-box; 
+
+    /*Creamos caja relativa (Se puede mover con Top & left)*/
+    position: relative;
+
+}
+
+/*Barra de navegación*/
+.navbar{
+    width: 100%;
+    height: 15vh;
+    
+    /*Display = Comportamiento*/
+    /*Indica como se van a comportar el (Logo, nav de links y 
+    todas las etiquetas que se encuentren dentro del navbar)  */
+    display: flex;
+    
+    /*Centramos los elementos del contenedor nav*/
+    margin:auto;
+    
+    /*Indicar que los elementos se centren*/
+    align-items: center;
+}
+
+.BadBunny{ /*Fondo de bad bunny*/
+    
+    /*Modificamos el tamaño de la imagen*/
+    width: 300px;
+    height: 300px;
+    
+    /*Modificamos la posición del logo a "Absoluto" (Se mueve con top & left)*/
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    
+
+}
+
+/*Navegación*/
+nav{
+    padding-left: 50px;
+    /*Vamos a hacer que la barra de navegación se ajuste a la derecha*/
+    display: inline-block;
+    
+    /*Hacemos que el nav sea "RELATIVE" para que se pueda mover*/
+    /*Porque por default las etiquetas son estáticas*/
+    position: relative;
+    
+    /*Vamos a mover la barra de navegación a la derecha*/
+    left: 75%;
+}
+
+/*Hacemos una combinación de etiquetas para que las propiedades 
+se apliquen para el "li" que está en dentro del "ul" y que esté dentro de "nav"*/
+nav ul li{
+    /*Los acomodamos de manera horizontal*/
+    display: inline-block;
+    
+    /*Le quitamos el estilo a las etiquetas*/
+    list-style: none;
+    
+    /*Margin para agregar espacio entre las etiquetas*/
+    margin: 20px 20px;
+    
+}
+
+/*Vamos a modificar el hipervínculo, de la siguiente manera (Jerarquicamente)*/
+nav ul li a{
+    
+    /*Vamos a quitar la linea que sale abajo de los hipervínculos:*/
+    text-decoration: none;
+    
+    /*Vamos a cambiar el color de los links*/
+    color: #333;
+}
+
+/*Vamos a modificar los h1 que pertenecen al div llamado "content"   */
+.content h1{
+    
+    /*Vamos a cambiar el tamaño de la letra*/
+    font-size: 60px;
+    
+    /*Modificamos la letra si va a hacer (Delgada o Gruesa)*/
+    font-weight: 100;
+
+    /*Modificamos el espacio que hay entre cada etiqueta*/
+    margin-top: 100px;
+    margin-bottom: 15px;
+    
+    /*Modificamos el color de la letra*/
+    color: #E68BFA; 
+    
+}
+
+/*Vamos a modificar el párrafo que pertenece al div "content"*/
+.content p{
+    /*Vamos a cambiar el tamaño de la letra*/
+    font-size: 20px;
+    
+    /*Modificamos el color de la letra*/
+    color: #E68BFA; 
+}
+
+/*Vamos a modificar el div "content" como tal*/
+
+.content{
+    
+    /*Modificamos el espacio que hay entre cada etiqueta*/
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.logo{ /*Logo de Nike*/
+    
+    /*Modificamos el espacio que hay entre cada etiqueta*/
+    margin-top: 50px;
+    height: 50px;
+   
+    /*Definimos que el cursor del mouse cambie de forma encima del logo.*/
+    cursor: pointer;
+}
+
