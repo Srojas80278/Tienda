@@ -10,5 +10,4 @@ public interface IPersonaService {
     public void savePersona(Persona persona);
     public void delete (long id);
     
-    
 }
